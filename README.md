@@ -4,7 +4,9 @@
 
 **Ehouse Learning** is an academic Business Analysis project focused on analyzing the current learning-management processes at **Ehouse English Center** and proposing a mobile application to improve student experience and operational efficiency.
 
-The current operating model relies heavily on fragmented channels such as websites, Zalo, Facebook, and spreadsheets for activities including course registration, class scheduling, academic requests, attendance, payment, and learning-progress tracking. The proposed Ehouse Learning application centralizes these interactions and enables students to access learning information and submit requests through a single mobile platform.
+The current operating model relies heavily on fragmented channels such as websites, Zalo, Facebook, and spreadsheets for activities including course registration, class scheduling, academic requests, attendance, payment, and learning-progress tracking.
+
+The proposed **Ehouse Learning mobile application** centralizes these interactions and provides students with a single platform to manage learning-related activities.
 
 **Project Duration:** Apr 2026 – Jul 2026
 **Role:** Business Analyst / Project Manager
@@ -17,11 +19,11 @@ The current operating model relies heavily on fragmented channels such as websit
 Through stakeholder interviews, surveys, and on-site observations, the project identified several major operational issues:
 
 * Student information and learning activities were distributed across multiple platforms.
-* Important class notifications could easily be missed when communicated through messaging applications.
-* Academic requests such as leave requests, make-up classes, and private tutoring were handled manually.
-* Students lacked a centralized platform to track attendance, assignments, learning progress, and request status.
-* Repetitive administrative tasks increased the workload for teaching assistants and academic staff.
-* Existing processes depended heavily on manual data checking and spreadsheet-based management.
+* Important notifications could easily be missed when communicated through messaging applications.
+* Academic requests such as leave requests, make-up classes, private tutoring, and exam rescheduling were handled manually.
+* Students lacked a centralized platform to track attendance, assignments, learning progress, and academic request status.
+* Repetitive administrative activities increased the workload of teaching assistants and academic staff.
+* Existing processes depended heavily on manual checking and spreadsheet-based management.
 
 ---
 
@@ -30,7 +32,7 @@ Through stakeholder interviews, surveys, and on-site observations, the project i
 I contributed across the majority of the Business Analysis lifecycle, including:
 
 * Stakeholder interviews and requirement gathering
-* On-site process observation
+* Surveys and on-site process observation
 * Business problem and pain-point analysis
 * Project Charter development
 * Business Case analysis
@@ -52,32 +54,30 @@ I contributed across the majority of the Business Analysis lifecycle, including:
 
 ## Requirement Gathering
 
-The project used multiple fact-finding techniques to understand the actual operations of Ehouse English Center.
+The project applied multiple fact-finding techniques to understand the actual operations of Ehouse English Center.
 
 ### Stakeholder Interviews
 
-A total of **10 stakeholders** were interviewed across different business roles, including:
+A total of **10 stakeholders** were interviewed across different business roles, including management, academic administration, consulting/customer service staff, teachers, and students.
 
-* Management and Academic Administration
-* Consulting and Customer Service staff
-* Teachers
-* Students
+The interviews focused on:
 
-The interviews were designed to understand current workflows, operational difficulties, system limitations, and user expectations.
+* Existing business processes
+* Operational difficulties
+* System limitations
+* User expectations
+* Business and system requirements
 
-### Surveys
+### Surveys & Observation
 
-Questionnaires were used to collect quantitative feedback regarding:
+Questionnaires and on-site observations were used to identify:
 
-* Learning information accessibility
+* Learning information accessibility issues
 * Notification effectiveness
-* Academic support requests
-* Learning progress tracking
+* Academic support request problems
+* Learning-progress tracking difficulties
+* Repetitive manual activities
 * User expectations for the proposed mobile application
-
-### Observation
-
-On-site observation was conducted to understand how employees and students actually interact with existing tools such as messaging platforms, spreadsheets, and the current website.
 
 ---
 
@@ -85,16 +85,13 @@ On-site observation was conducted to understand how employees and students actua
 
 ### AS-IS Analysis
 
-The current processes were modeled using **BPMN** to identify inefficiencies, manual activities, fragmented communication channels, and operational bottlenecks.
+The existing processes were modeled using **BPMN** to identify operational bottlenecks, manual activities, fragmented communication channels, and information gaps.
 
-Key areas analyzed included:
+The main AS-IS processes analyzed include:
 
 * Course Registration
 * Learning Process
 * Course Completion
-* Academic Support Requests
-* Attendance Management
-* Learning Progress Tracking
 
 ### TO-BE Analysis
 
@@ -104,7 +101,7 @@ Based on the identified pain points, redesigned TO-BE processes were proposed to
 * Reduce manual communication
 * Automate academic request workflows
 * Improve information transparency
-* Provide real-time notifications
+* Provide timely notifications
 * Enable student self-service
 * Improve attendance and learning-progress tracking
 
@@ -112,76 +109,80 @@ Based on the identified pain points, redesigned TO-BE processes were proposed to
 
 ## Proposed Solution
 
-The proposed **Ehouse Learning mobile application** contains six major functional areas:
+The proposed Ehouse Learning system contains **6 core functional areas**.
 
 ### 1. Course Registration
 
 Allows students to:
 
 * Browse available courses
-* View course information and schedules
+* View course details
 * Submit registration information
 * Request consultation
-* Track registration status
+* Track the registration process
 
 ### 2. Payment
 
 Supports:
 
-* Online tuition payment
-* Payment status tracking
-* Payment verification
-* Electronic receipts
+* Payment-method selection
+* QR-based payment
+* Payment-status tracking
+* Payment confirmation
 
 ### 3. Class Schedule & Notification
 
-Provides students with:
+Provides:
 
 * Personal class schedules
-* Classroom information
 * Schedule-change notifications
-* Important learning announcements
+* Notification details
+* Course information
 
 ### 4. Academic Support Request
 
-Allows students to submit and track requests such as:
+Allows students to submit and track:
 
 * Leave requests
-* Make-up class registration
+* Make-up class requests
 * Private tutoring requests
-* Exam rescheduling
+* Exam rescheduling requests
+* Request cancellation
 
 ### 5. Attendance & Learning Progress Tracking
 
 Provides centralized access to:
 
-* Attendance records
-* Absence information
-* Assignment status
-* Test results
+* Attendance information
 * Learning progress
-* Teacher feedback
+* Assignment status
+* Submitted assignments
+* Overdue assignments
+* Grade notifications
 
 ### 6. QR Attendance Scanning
 
-Students can scan session-specific QR codes to record attendance.
+Allows students to scan QR codes to record attendance.
 
-Validation rules were designed for scenarios including:
+The function also considers validation scenarios such as:
 
 * Invalid QR codes
 * Expired QR codes
 * Closed attendance sessions
 * Duplicate attendance attempts
-* Scans outside the allowed attendance period
+* Scans outside the allowed time
 * Network or system errors
 
 ---
 
 ## Requirements & System Modeling
 
-The project translated business findings into structured system specifications, including:
+System analysis was performed at both the **overall system level** and the **function level**.
 
-* Business Requirements Document (BRD)
+The project includes:
+
+* Business Requirements
+* System Requirements
 * Functional Requirements
 * Non-functional Requirements
 * User Stories
@@ -192,25 +193,27 @@ The project translated business findings into structured system specifications, 
 * Use Case Diagrams
 * Class Diagrams
 * Sequence Diagrams
-* Alternative and Exception Flows
-* Requirements Traceability
+* Alternative and Exception Scenarios
+* Flow Validation
+
+Each of the **6 core functions** contains its own set of analysis artifacts.
 
 ---
 
 ## UI/UX Design
 
-Business and system requirements were translated into mobile application interfaces using **Figma**.
+Business and system requirements were translated into mobile interfaces using **Figma**.
 
-The design process included:
+The UI/UX process included:
 
 * Screen Navigation Diagram
-* Low-fidelity Wireframes
+* Wireframes
 * High-fidelity Mockups
 * Interactive Prototype
 * Data Validation
 * Flow Validation
 
-Mockups were developed for all **6 major application functions**, ensuring that system requirements could be visually validated before implementation.
+Wireframes and mockups were organized separately for each core function to demonstrate the progression from early interface concepts to detailed user-interface designs.
 
 ---
 
@@ -218,7 +221,7 @@ Mockups were developed for all **6 major application functions**, ensuring that 
 
 The project also included data modeling to ensure alignment between business processes and system requirements.
 
-Deliverables included:
+Main deliverables include:
 
 * Entity identification
 * Attribute definition
@@ -226,18 +229,20 @@ Deliverables included:
 * Entity relationships
 * Entity Relationship Diagram (ERD)
 * Database normalization
-* Data Dictionary
+* Database schema design
 * Physical database implementation
 
 The physical database was implemented in **Microsoft SQL Server**, consisting of **24 business entity tables and 1 learning-progress view**.
 
 ---
 
-## Business Impact
+## Business Case
 
-A business case was developed to estimate the potential operational benefits of implementing Ehouse Learning.
+A Business Case was developed to evaluate the potential operational value of the proposed system.
 
-| Metric                                            |      Estimated Impact |
+Key projected results include:
+
+| Metric                                            |       Estimated Value |
 | ------------------------------------------------- | --------------------: |
 | Current repetitive administrative processing time |   ~1,065 minutes/week |
 | Estimated processing time after implementation    |   ~577.5 minutes/week |
@@ -246,35 +251,38 @@ A business case was developed to estimate the potential operational benefits of 
 | Estimated system investment                       |  **~VND 120 million** |
 | Estimated payback period                          |        **~10 months** |
 
-> These figures represent projected results from the project Business Case and have not been validated through production implementation.
+> These figures are projected results from the project's Business Case and have not been validated through production implementation.
 
 ---
 
 ## Project Methodology
 
-The project adopted a **Hybrid methodology**, combining:
+The project applied a **Hybrid methodology**, combining Waterfall and Agile approaches.
 
-**Waterfall**
+### Waterfall
+
+Used mainly for:
 
 * Requirement gathering
 * Business analysis
 * Scope definition
-* BPMN modeling
+* Business process modeling
 * System specification
 
-**Agile**
+### Agile
+
+Used mainly for:
 
 * UI/UX design
 * Prototype development
-* Iterative validation and refinement
-
-This approach provided structured requirement analysis while allowing iterative improvement during interface and prototype development.
+* Iterative validation
+* Interface refinement
 
 ---
 
 ## Tools & Techniques
 
-**Business Analysis**
+### Business Analysis
 
 * Requirements Gathering
 * Stakeholder Interviews
@@ -286,17 +294,16 @@ This approach provided structured requirement analysis while allowing iterative 
 * Use Cases
 * Business Rules
 
-**Modeling & Design**
+### System Modeling
 
 * BPMN Diagram
 * Use Case Diagram
 * Class Diagram
 * Sequence Diagram
 * ERD
-* Wireframing
-* Prototyping
+* Flow Validation
 
-**Tools**
+### Tools
 
 * Figma
 * Microsoft SQL Server
@@ -313,13 +320,11 @@ ehouse-learning-business-analysis/
 │
 ├── 01-project-overview/
 │   ├── project-charter.pdf
-│   ├── business-case.pdf
-│   └── project-methodology.pdf
+│   └── business-case.pdf
 │
 ├── 02-requirement-gathering/
 │   ├── stakeholder-interviews.pdf
-│   ├── survey-summary.pdf
-│   ├── observation-summary.pdf
+│   ├── fact-finding-summary.pdf
 │   ├── business-requirements.pdf
 │   └── system-requirements.pdf
 │
@@ -341,88 +346,71 @@ ehouse-learning-business-analysis/
 │   │   └── overall-use-case-diagram.png
 │   │
 │   ├── 01-course-registration/
-│   │   ├── user-stories.pdf
-│   │   ├── to-be-bpmn.png
-│   │   ├── use-case-diagram.png
-│   │   ├── use-case-specification.pdf
-│   │   ├── class-diagram.png
-│   │   ├── sequence-diagram-main-flow.png
-│   │   ├── sequence-diagram-alternative-flow.png
-│   │   ├── sequence-diagram-exception-flow.png
-│   │   └── flow-validation.png
-│   │
 │   ├── 02-payment/
-│   │   ├── user-stories.pdf
-│   │   ├── to-be-bpmn.png
-│   │   ├── use-case-diagram.png
-│   │   ├── use-case-specification.pdf
-│   │   ├── class-diagram.png
-│   │   ├── sequence-diagram.png
-│   │   └── flow-validation.png
-│   │
 │   ├── 03-class-schedule-notification/
-│   │   ├── user-stories.pdf
-│   │   ├── to-be-bpmn.png
-│   │   ├── use-case-diagram.png
-│   │   ├── use-case-specification.pdf
-│   │   ├── class-diagram.png
-│   │   ├── sequence-diagram.png
-│   │   └── flow-validation.png
-│   │
 │   ├── 04-academic-support-request/
-│   │   ├── user-stories.pdf
-│   │   ├── to-be-bpmn.png
-│   │   ├── use-case-diagram.png
-│   │   ├── use-case-specification.pdf
-│   │   ├── class-diagram.png
-│   │   ├── sequence-diagram.png
-│   │   └── flow-validation.png
-│   │
 │   ├── 05-attendance-learning-progress/
-│   │   ├── user-stories.pdf
-│   │   ├── to-be-bpmn.png
-│   │   ├── use-case-diagram.png
-│   │   ├── use-case-specification.pdf
-│   │   ├── class-diagram.png
-│   │   ├── sequence-diagram.png
-│   │   └── flow-validation.png
-│   │
 │   └── 06-qr-attendance/
-│       ├── user-stories.pdf
-│       ├── to-be-bpmn.png
-│       ├── use-case-diagram.png
-│       ├── use-case-specification.pdf
-│       ├── class-diagram.png
-│       ├── sequence-diagram.png
-│       └── flow-validation.png
 │
 ├── 05-ui-ux/
-│   ├── screen-navigation-diagram.png
 │   ├── 01-course-registration/
-│   │   ├── wireframes.pdf
-│   │   └── mockups.pdf
+│   │   ├── wireframes/
+│   │   └── mockups/
 │   ├── 02-payment/
+│   │   ├── wireframes/
+│   │   └── mockups/
 │   ├── 03-class-schedule-notification/
+│   │   ├── wireframes/
+│   │   └── mockups/
 │   ├── 04-academic-support-request/
+│   │   ├── wireframes/
+│   │   └── mockups/
 │   ├── 05-attendance-learning-progress/
-│   ├── 06-qr-attendance/
-│   └── prototype-link.md
+│   │   ├── wireframes/
+│   │   └── mockups/
+│   └── 06-qr-attendance/
+│       ├── wireframes/
+│       └── mockups/
 │
-├── 06-data-design/
-│   ├── erd.png
-│   ├── data-dictionary.pdf
-│   ├── database-design.pdf
-│   └── sql-server-implementation.pdf
-│
-└── 07-business-impact/
-    ├── business-impact-summary.pdf
-    └── cost-benefit-analysis.pdf
+└── 06-data-design/
+    ├── erd.png
+    ├── database-design.pdf
+    └── sql-server-implementation.pdf
 ```
+
+---
+
+## Key Deliverables
+
+### Project-level Deliverables
+
+* Project Charter
+* Business Case
+* Stakeholder Interviews
+* Fact-finding Analysis
+* Business Requirements
+* System Requirements
+* AS-IS Business Processes
+* Overall TO-BE Business Processes
+* Overall Use Case Diagram
+* Entity Relationship Diagram
+
+### Function-level Deliverables
+
+For each of the 6 core functions:
+
+* TO-BE BPMN
+* Use Case Diagram
+* Class Diagram
+* Sequence Diagram
+* Flow Validation
+* Wireframes
+* Mockups
 
 ---
 
 ## Key Takeaways
 
-Through this project, I gained hands-on experience across the end-to-end Business Analysis process, from gathering stakeholder requirements and analyzing existing business processes to designing TO-BE workflows, defining system requirements, developing prototypes, validating system flows, and evaluating the potential business impact of the proposed solution.
+Through this project, I gained hands-on experience across the end-to-end Business Analysis process, from gathering stakeholder requirements and analyzing current business processes to designing TO-BE workflows, defining system requirements, developing prototypes, validating system flows, and evaluating the potential business impact of a proposed solution.
 
-The project strengthened my ability to bridge **business needs, user requirements, process design, and system specifications** into a structured solution proposal.
+The project strengthened my ability to bridge **business needs, user requirements, process design, system specifications, and data structure** into a structured solution proposal.
